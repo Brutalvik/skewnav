@@ -2,16 +2,15 @@
 
 > **Skewed 3D navigation tiles with optional iOS-style glass blur** — built for React + TypeScript by **Vikram Kumar (V-Bytes)**.
 
-[![npm version](https://img.shields.io/npm/v/@vbytes/skewnav?color=1DA1F2&style=flat-square)](https://www.npmjs.com/package/@vbytes/skewnav)
-[![npm downloads](https://img.shields.io/npm/dm/@vbytes/skewnav?style=flat-square)](https://www.npmjs.com/package/@vbytes/skewnav)
+[![npm version](https://img.shields.io/npm/v/skewnav?style=flat-square)](https://www.npmjs.com/package/skewnav)
+[![npm downloads](https://img.shields.io/npm/dm/skewnav?style=flat-square)](https://www.npmjs.com/package/skewnav)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](LICENSE)
-[![typescript](https://img.shields.io/badge/%3C%2F%3E-TypeScript-3178c6?style=flat-square)](https://www.typescriptlang.org/)
 
 ---
 
 ## ✨ Overview
 
-`@vbytes/skewnav` is a lightweight React component library that renders a **skewed 3D navigation bar** with optional **glassmorphism** (blur, transparency, and saturation inspired by iOS).  
+`skewnav` is a lightweight React component library that renders a **skewed 3D navigation bar** with optional **glassmorphism** (blur, transparency, and saturation inspired by iOS).  
 It’s fully themable, written in TypeScript, and works seamlessly with **Next.js**, **Vite**, and other modern React frameworks.
 
 **Key Features**
@@ -28,18 +27,18 @@ It’s fully themable, written in TypeScript, and works seamlessly with **Next.j
 ## 🚀 Installation
 
 ```bash
-npm install @vbytes/skewnav
+npm install skewnav
 # or
-yarn add @vbytes/skewnav
+yarn add skewnav
 # or
-pnpm add @vbytes/skewnav
+pnpm add skewnav
 ```
 
 ## 💡 Usage Example
 
 ```tsx
-import { SkewNav } from "@vbytes/skewnav";
-import "@vbytes/skewnav/styles.css"; // required stylesheet
+import { SkewNav } from "skewnav";
+import "skewnav/styles.css"; // required stylesheet
 
 export default function ExampleNav() {
   return (
@@ -94,7 +93,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 
 ## 💬 Feedback & Support
 
-- 🐞 **Report issues:** [GitHub Issues](https://github.com/vbytes/skewnav/issues)
+- 🐞 **Report issues:** [GitHub Issues](https://github.com/brutalvik/skewnav/issues)
 - 💡 **Request features:** [LinkedIn](https://www.linkedin.com/in/vikram-kumar-vbytes)
 - ⭐ **Star the repo if you like it!**
 

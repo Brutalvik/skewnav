@@ -1,5 +1,5 @@
 {
-  "name": "@brutalvik/skewnav",
+  "name": "skewnav",
   "version": "0.1.2",
   "license": "MIT",
   "type": "module",
@@ -38,5 +38,6 @@
     "cpy-cli": "^6.0.0",
     "tsup": "^8.5.0",
     "typescript": "^5.9.3"
-  }
+  },
+  "publishConfig": {}
 }

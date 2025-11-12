@@ -59,14 +59,21 @@ export const SkewNav: React.FC<SkewNavProps> = ({
   return (
     <nav
       aria-label="Skew navigation"
-      className={"sk-container" + (className ? ` ${className}` : "")}
+      className={
+        "sk-container skw-nav" +
+        (glass ? " glass" : "") +
+        (className ? ` ${className}` : "")
+      }
       style={style}
     >
+      {/* Optional runway/shadow plane for enhanced glass look */}
+      {glass && <div className="skw-shadow" aria-hidden="true" />}
+
       <ul className="sk-list" role="list">
         {items.map((it, idx) => (
-          <li key={idx} className="sk-li">
+          <li key={idx} className="sk-li" role="listitem">
             <a
-              className={"sk-item" + (glass ? " sk-glass" : "")}
+              className={"sk-item skw-tile" + (glass ? " sk-glass" : "")}
               href={it.href ?? "#"}
               onClick={it.onClick}
               aria-label={it.label ?? it.icon}

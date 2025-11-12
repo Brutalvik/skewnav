@@ -1,0 +1,90 @@
+.sk-container {
+  background: var(--sk-body, transparent);
+}
+
+.sk-list {
+  position: relative;
+  transform: rotate(var(--sk-rotate)) skew(var(--sk-skew-x), var(--sk-skew-y));
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.sk-li {
+  list-style: none;
+}
+
+.sk-item {
+  background: var(--sk-bg);
+  color: var(--sk-fg);
+  text-align: center;
+  height: calc(var(--sk-height-em) * 1em);
+  width: 4em;
+  line-height: calc(var(--sk-height-em) * 1em);
+  border-bottom: 1px solid #060606;
+  position: relative;
+  display: block;
+  text-decoration: none;
+  box-shadow: -2em 1.5em 0 var(--sk-shadow);
+  transition: transform 0.25s linear, box-shadow 0.25s linear,
+    color 0.25s linear, background-color 0.25s linear,
+    backdrop-filter 0.25s linear, -webkit-backdrop-filter 0.25s linear;
+}
+
+.sk-item::before,
+.sk-item::after {
+  content: "";
+  position: absolute;
+  transition: all 0.25s linear;
+  width: 0.5em;
+}
+.sk-item::before {
+  height: calc(var(--sk-height-em) * 1em);
+  background: var(--sk-side1);
+  top: 0.25em;
+  left: -0.5em;
+  transform: skewY(-45deg);
+}
+.sk-item::after {
+  height: 4em;
+  background: var(--sk-side2);
+  bottom: -2.25em;
+  left: 1.5em;
+  transform: rotate(90deg) skew(0, 45deg);
+}
+
+.sk-item:hover {
+  background: var(--sk-hover-bg);
+  color: var(--sk-hover-fg);
+  transform: translate(0.9em, -0.9em);
+  box-shadow: -2em 2em 0 var(--sk-shadow);
+}
+.sk-item:hover::before {
+  background: var(--sk-ring);
+  width: 1em;
+  top: 0.5em;
+  left: -1em;
+}
+.sk-item:hover::after {
+  background: var(--sk-ring);
+  width: 1em;
+  bottom: -2.5em;
+  left: 1em;
+  height: 4em;
+}
+
+.sk-item:focus-visible {
+  outline: 2px solid var(--sk-ring);
+  outline-offset: 2px;
+}
+
+/* Optional glass effect */
+.sk-glass {
+  backdrop-filter: blur(14px) saturate(130%);
+  -webkit-backdrop-filter: blur(14px) saturate(130%);
+  background: color-mix(in oklab, var(--sk-bg) 70%, white 30%);
+}
+@media (prefers-color-scheme: dark) {
+  .sk-glass {
+    background: color-mix(in oklab, rgba(0, 0, 0, 0.55) 80%, white 20%);
+  }
+}

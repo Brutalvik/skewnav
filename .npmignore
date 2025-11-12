@@ -1,0 +1,5 @@
+src
+*.log
+*.map
+tsconfig.json
+tsup.config.* 

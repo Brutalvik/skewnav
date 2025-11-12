@@ -1,4 +1,4 @@
-# 🌀 @vbytes/skewnav
+# 🌀 skewnav
 
 > **Skewed 3D navigation tiles with optional iOS-style glass blur** — built for React + TypeScript by **Vikram Kumar (V-Bytes)**.
 

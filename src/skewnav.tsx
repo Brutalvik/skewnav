@@ -66,9 +66,6 @@ export const SkewNav: React.FC<SkewNavProps> = ({
       }
       style={style}
     >
-      {/* Optional runway/shadow plane for enhanced glass look */}
-      {glass && <div className="skw-shadow" aria-hidden="true" />}
-
       <ul className="sk-list" role="list">
         {items.map((it, idx) => (
           <li key={idx} className="sk-li" role="listitem">

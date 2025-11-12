@@ -94,7 +94,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 ## 💬 Feedback & Support
 
 - 🐞 **Report issues:** [GitHub Issues](https://github.com/brutalvik/skewnav/issues)
-- 💡 **Request features:** [LinkedIn](https://www.linkedin.com/in/vikram-kumar-vbytes)
+- 💡 **Request features:** [LinkedIn](https://www.linkedin.com/in/vbytes)
 - ⭐ **Star the repo if you like it!**
 
 > Built with ❤️ by **V-Bytes (Vikram Kumar)**  
